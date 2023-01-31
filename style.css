@@ -95,6 +95,10 @@ body {
   background-color: var(--color-gray-white);
 }
 
+.btn:active {
+  background-color: var(--color-gray);
+}
+
 .sign-btn {
   background-color: var(--color-gray-white);
 }
