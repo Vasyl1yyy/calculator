@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    font-family:'Poppins', sans-serif;
+}
+
+:root {
+  --color-black: #121212;
+  --color-white: #e9e9e9;
+  --color-gray: #252525;
+  --color-gray-white: #555555;
+  --color-orange: rgb(211, 128, 20);
+  --color-white-gray: #818181;
+  --color-white-orange:  rgb(245, 171, 75);
+  --color-w-w-g: #d3d3d3;
+  --color-w-g-g: #adadad;
+
+  --font-regular: 400;
+  --font-medium: 500; 
+}
+
+
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.body {
+  transition: linear 0.3s;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.count {
+  text-align: right;
+  font-weight: var(--font-regular);
+  font-size: 16px;
+
+  border: 2px solid var(--color-gray-white);
+  border-radius: 12px;
+
+  color: var(--color-white);
+
+  width: 250px;
+  height: 20px;
+
+  padding: 5px;
+  margin-bottom: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 8px;
+
+  width: 250px;
+}
+
+.btn {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+
+  font-weight: var(--font-medium);
+  font-size: 12px;
+
+  width: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  margin-top: 8px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: linear 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--color-gray-white);
+}
+
+.sign-btn {
+  background-color: var(--color-gray-white);
+}
+
+.sign-btn:hover {
+  background-color: var(--color-white-gray);
+}
+
+.total {
+  background-color: var(--color-orange);
+}
+
+.total:hover {
+  background-color: var(--color-white-orange);
+}
+
+.btn-color {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 250px;
+
+  margin-bottom: 12px;
+
+  cursor: pointer;
+}
+
+.color {
+  background-color: var(--color-white);
+
+  padding: 12px;
+  border-radius: 50%;
+
+  transition: linear 0.3s;
+}
