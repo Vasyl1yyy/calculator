@@ -17,6 +17,14 @@ buttons.forEach((item) => {
       setTimeout(() => (display.innerHTML = ''), 2000);
     } else if (display.innerHTML == '0' && item.id == '+') {
       display.innerHTML += item.id;
+    } else if (display.innerHTML == '0' && item.id == '-') {
+      display.innerHTML += item.id;
+    } else if (display.innerHTML == '0' && item.id == '*') {
+      display.innerHTML += item.id;
+    } else if (display.innerHTML == '0' && item.id == '/') {
+      display.innerHTML += item.id;
+    } else if (display.innerHTML == '0' && item.id == '.') {
+      display.innerHTML += item.id;
     } else if (display.innerHTML == '0' && item.id ) {
       display.innerHTML = item.id;
     } else if (display.innerHTML == '' && item.id == '+') {
