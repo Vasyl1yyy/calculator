@@ -17,6 +17,16 @@ buttons.forEach((item) => {
       setTimeout(() => (display.innerHTML = ''), 2000);
     } else if (display.innerHTML == '0' && item.id ) {
       display.innerHTML = item.id;
+    } else if (display.innerHTML == '' && item.id == '+') {
+      display.innerHTML = '';
+    } else if (display.innerHTML == '' && item.id == '-') {
+      display.innerHTML = '';
+    } else if (display.innerHTML == '' && item.id == '*') {
+      display.innerHTML = '';
+    } else if (display.innerHTML == '' && item.id == '/') {
+      display.innerHTML = '';
+    } else if (display.innerHTML == '' && item.id == '.') {
+      display.innerHTML = '';
     } else {
       display.innerHTML += item.id;
     }
@@ -24,13 +34,13 @@ buttons.forEach((item) => {
 })
 
 color.onclick = () => {
-  if (color.style.backgroundColor == 'var(--color-white)') {
-    document.querySelector('.body').style.backgroundColor = 'var(--color-white)';
-    document.querySelector('.count').style.color = 'var(--color-black)'; 
-    color.style.backgroundColor = 'var(--color-black)';
-  } else {
+  if (color.style.backgroundColor == 'var(--color-black)') {
     document.querySelector('.body').style.backgroundColor = 'var(--color-black)';
     document.querySelector('.count').style.color = 'var(--color-white)'; 
     color.style.backgroundColor = 'var(--color-white)'
+  } else {
+    document.querySelector('.body').style.backgroundColor = 'var(--color-white)';
+    document.querySelector('.count').style.color = 'var(--color-black)'; 
+    color.style.backgroundColor = 'var(--color-black)';
   }
 }
