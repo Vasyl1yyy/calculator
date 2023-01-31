@@ -117,8 +117,6 @@ body {
   width: 250px;
 
   margin-bottom: 12px;
-
-  cursor: pointer;
 }
 
 .color {
@@ -126,6 +124,8 @@ body {
 
   padding: 12px;
   border-radius: 50%;
+
+  cursor: pointer;
 
   transition: linear 0.3s;
 }
