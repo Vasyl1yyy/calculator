@@ -18,15 +18,15 @@ buttons.forEach((item) => {
     } else if (display.innerHTML == '0' && item.id ) {
       display.innerHTML = item.id;
     } else if (display.innerHTML == '' && item.id == '+') {
-      display.innerHTML = '';
+      display.innerHTML = '0+';
     } else if (display.innerHTML == '' && item.id == '-') {
-      display.innerHTML = '';
+      display.innerHTML = '0-';
     } else if (display.innerHTML == '' && item.id == '*') {
-      display.innerHTML = '';
+      display.innerHTML = '0*';
     } else if (display.innerHTML == '' && item.id == '/') {
-      display.innerHTML = '';
+      display.innerHTML = '0/';
     } else if (display.innerHTML == '' && item.id == '.') {
-      display.innerHTML = '';
+      display.innerHTML = '0.';
     } else {
       display.innerHTML += item.id;
     }
