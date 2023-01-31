@@ -15,6 +15,8 @@ buttons.forEach((item) => {
     } else if (display.innerHTML == '' && item.id == 'equal') {
       display.innerHTML = 'Empty!';
       setTimeout(() => (display.innerHTML = ''), 2000);
+    } else if (display.innerHTML == '0' && item.id == '+') {
+      display.innerHTML += item.id;
     } else if (display.innerHTML == '0' && item.id ) {
       display.innerHTML = item.id;
     } else if (display.innerHTML == '' && item.id == '+') {
