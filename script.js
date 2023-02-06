@@ -37,6 +37,16 @@ buttons.forEach((item) => {
       display.innerHTML = '0/';
     } else if (display.innerHTML == '' && item.id == '.') {
       display.innerHTML = '0.';
+    } else if (display.innerHTML.slice(-1) == '+' && (item.id == '+' || item.id == '-' || item.id == '*' || item.id == '/' || item.id == '.')) {
+      display.innerHTML;
+    } else if (display.innerHTML.slice(-1) == '-' && (item.id == '+' || item.id == '-' || item.id == '*' || item.id == '/' || item.id == '.')) {
+      display.innerHTML;
+    } else if (display.innerHTML.slice(-1) == '*' && (item.id == '+' || item.id == '-' || item.id == '*' || item.id == '/' || item.id == '.')) {
+      display.innerHTML;
+    } else if (display.innerHTML.slice(-1) == '/' && (item.id == '+' || item.id == '-' || item.id == '*' || item.id == '/' || item.id == '.')) {
+      display.innerHTML;
+    } else if (display.innerHTML.slice(-1) == '.' && (item.id == '+' || item.id == '-' || item.id == '*' || item.id == '/' || item.id == '.')) {
+      display.innerHTML;
     } else {
       display.innerHTML += item.id;
     }
